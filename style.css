@@ -1,0 +1,35 @@
+.bg-purple{
+    background-color:#6f42c1;
+}
+
+.bg-grey{
+    background-color:#adb5bd;
+}
+
+html, body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.submenu{
+    font-size: smaller;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+h4{
+    text-align: left;
+}
+
+h5, h6{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+#nosotros .img-thumbnail{
+    max-height: 250px;
+}
