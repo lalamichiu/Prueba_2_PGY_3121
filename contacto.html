@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;800&family=Nunito:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
+    <script src="code.js"></script>
 </head>
 <body>
   <header>
@@ -65,27 +66,27 @@
           <form class="row g-3">
               <div class="col-12 col-md-6">
                 <label for="inputNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputNombre">
+                <input type="text" name="inputNombre" id="inputNombre" class="form-control" id="inputNombre">
               </div>
               <div class="col-12 col-md-6">
-                <label for="inputApellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="inputApellidos">
+                <label for="inputApellido" class="form-label">Apellido</label>
+                <input type="text" name="inputApellido" id="inputApellido" class="form-control" id="inputApellido">
               </div>
               <div class="col-12">
                 <label for="inputTelefono" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="inputTelefono" placeholder="+562 8788 1212">
+                <input type="text" name="inputTelefono" id="inputTelefono" class="form-control" id="inputTelefono" placeholder="+562 8788 1212">
               </div>
               <div class="col-12">
-                <label for="inputCelular" class="form-label">Celular</label>
-                <input type="text" class="form-control" id="inputCelular" placeholder="+569 8513 1231">
+                <label for="inputCelular"  class="form-label">Celular</label>
+                <input type="text" name="inputCelular" id="inputCelular" class="form-control" id="inputCelular" placeholder="+569 8513 1231">
               </div>
               <div class="col-12 col-md-6">
-                <label for="inputCiudad" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCiudad">
+                <label for="inputMail"  class="form-label">Email</label>
+                <input type="text" name="inputMail" id="inputMail" class="form-control" id="inputMail">
               </div>
               <div class="col-12 col-md-6">
                 <label for="inputRegion" class="form-label">Región</label>
-                <select id="inputRegion" class="form-select">
+                <select id="inputRegion" name="inputRegion" id="inputRegion" class="form-select">
                   <option selected>Seleccione</option>
                   <option>Región de Arica y Parinacota</option>
                   <option>Región de Tarapacá</option>
@@ -107,10 +108,10 @@
               </div>
                 <div class="col-12 col-md-6">
                   <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" name="inputMensaje" id="inputMensaje"  rows="3"></textarea>
                 </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-danger">Enviar</button>
+                <input type="button" id="btnEnvio" value="Enviar">
               </div>
             </form>
           </div>
