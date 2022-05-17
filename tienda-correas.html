@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Correas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,34 +60,46 @@
               <section class="correa">
                 <div class="card-group">
                   <div class="card">
-                    <img src="img/correa01-2.jpg" class="card-img-top" alt="Correa 1">
+                    <div id="contenedor" class="containerhd">
+                      <img src="img/correa01-2.jpg" class="card-img-top" alt="Correa 1" id="imagen">
+                        <div class="centrado">
+                          <button id="boton" class="btnhd btn-primary">Info</button>
+                        </div>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title">Correa simple</h5>
                       <p class="card-text">Correa delgada de paseo.</p>
                       </div>
-                      <a href="#" class="btn btn-primary">Añadir al carro</a>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                   </div>
                   <div class="card">
-                    <img src="img/correa02-2.jpg" class="card-img-top" alt="Correa 2">
+                    <div id="contenedor2" class="containerhd">
+                      <img src="img/correa02-2.jpg" class="card-img-top" alt="Correa 2" id="imagen2">
+                        <div class="centrado">
+                          <button id="boton2" class="btnhd btn-primary">Info</button>
+                        </div>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title">Correa retractil</h5>
                       <p class="card-text">Correa retractil de paseo.</p>                    
                     </div>
-                    <a href="#" class="btn btn-primary">Añadir al carro</a>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 9 mins ago</small>
                     </div>
                   </div>
                   <div class="card">
-                    <img src="img/correa03-2.jpg" class="card-img-top" alt="Correa 3">
+                    <div id="contenedor3" class="containerhd">
+                      <img src="img/correa03-2.jpg" class="card-img-top" alt="Correa 3" id="imagen3">
+                        <div class="centrado">
+                          <button id="boton3" class="btnhd btn-primary">Info</button>
+                        </div>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title">Correa gruesa</h5>
                       <p class="card-text">Correa gruesa de paseo.</p>
                     </div>
-                    <a href="#" class="btn btn-primary">Añadir al carro</a>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 20 mins ago</small>
                     </div>
@@ -96,7 +109,8 @@
             </div>
           </div>
     </section>
-    
+  
+<script src="script-correas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
