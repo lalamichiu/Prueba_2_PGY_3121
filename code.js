@@ -1,5 +1,19 @@
 $(document).ready(
     function () {
+        var bPreguntar = true;
+        window.onbeforeunload = preguntarAntesDeSalir;
+        function preguntarAntesDeSalir() {
+            if (bPreguntar)
+                return "validacion"
+        }
+        /* Definicion de clases JQuery */
+        $('.solo-string').keyup(function () {
+            this.value = (this.value + '').replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
+        });
+
+        $('.solo-numero').keyup(function () {
+            this.value = (this.value + '').replace(/[^0-9]/g, '');
+        });
         $("#inputMail").blur(function () {
             var userinput = $(this).val();
             var pattern = /^\b[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}\b$/i
@@ -45,25 +59,25 @@ $(document).ready(
             }
         });
 
-        $.get("https://apis.digital.gob.cl/dpa/regiones", function(data){
-            $.each(data, function(i, item){
+        $.get("https://apis.digital.gob.cl/dpa/regiones", function (data) {
+            $.each(data, function (i, item) {
                 $("#optionRegion").append(
-                    '<option value="'+ item.codigo + '">' + item.nombre + '</option>'
+                    '<option value="' + item.codigo + '">' + item.nombre + '</option>'
                 )
             });
         });
-        
+
         $("#optionRegion").blur(function () {
             var userinput = $(this).val();
-            
+
             if (userinput == "Seleccione") {
                 alert('Seleccione una Región porfavor.')
-            }else{
-                $.get("https://apis.digital.gob.cl/dpa/regiones/"+userinput+"/comunas", function(data){
+            } else {
+                $.get("https://apis.digital.gob.cl/dpa/regiones/" + userinput + "/comunas", function (data) {
                     $("#optionComuna").empty();
-                    $.each(data, function(i, item){
+                    $.each(data, function (i, item) {
                         $("#optionComuna").append(
-                            '<option value="'+ item.codigo + '">' + item.nombre + '</option>'
+                            '<option value="' + item.codigo + '">' + item.nombre + '</option>'
                         )
                     });
                 });
@@ -88,10 +102,10 @@ $(document).ready(
             if (c === undefined) {
                 alert("Apellido vacio");
             }
-            if (d === undefined){
+            if (d === undefined) {
                 alert("Formato incorrecto")
             }
-            if (e == undefined){
+            if (e == undefined) {
                 alert("Formato Incorrecto")
             }
         });
