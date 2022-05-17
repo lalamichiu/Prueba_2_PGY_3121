@@ -33,3 +33,44 @@ h5, h6{
 #nosotros .img-thumbnail{
     max-height: 250px;
 }
+
+/* BANDANAS */
+
+.blurr{
+    transition: 0.5s all;
+    filter: blur(6px);
+  }
+.btnhd{
+    transition: 0.5s all;
+    width: 100px;
+    height: 50px;
+}
+.containerhd{
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    transition: 0.5s;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos contacto.html*/
+
+.formulario{
+    margin-top: 5%;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
