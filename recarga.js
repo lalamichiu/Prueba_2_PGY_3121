@@ -1,6 +1,6 @@
 const iFrameNosotros = '<iframe class="ifForm" src="Nosotros.html" scrolling="no" frameborder="0"></iframe>'
 const iFrameTienda = '<iframe class="ifForm" src="Tienda.html" scrolling="no" frameborder="0"></iframe>'
-const iFrameDonaciones = '<iframe class="ifForm" src="donaciones.html" scrolling="no" frameborder="0"></iframe>'
+const iFrameDonaciones = '<iframe class="ifForm" src="Donaciones.html" scrolling="no" frameborder="0"></iframe>'
 const iFrameContacto = '<iframe class="ifForm" src="Contacto.html" scrolling="no" frameborder="0"></iframe>'
 
 const mostrarNosotros = ()=>{
